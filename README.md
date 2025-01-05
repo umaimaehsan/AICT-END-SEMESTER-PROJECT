@@ -10,8 +10,6 @@
 - [Pages](#pages)
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ---
@@ -75,7 +73,7 @@
 -Use the FAQ and Contact pages for additional support.
 
 
-##Contact
+## Contact
 For support or inquiries, reach out via:
 
 Email: support@bookcave.com
