@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - The Shadowed Bookstore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Book Cave<span>.</span></a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="products.html">Books</a></li>
+                <li><a href="index.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            
+            <a href="viewcart.html" class="fas fa-shopping-cart"></a>
+            <a href="registration.html" class="fas fa-user"></a>
+
+        </div>
+
+        
+    </header>
+
+
+    <!-- Add to cart Section -->
+
+    <section class="cart" id="cart">
+        <div class="cart-wrapper">
+            <!-- Cart Items Section -->
+            <div class="cart-container">
+                <h2>Your Cart</h2>
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Cart items will be dynamically rendered here -->
+                    </tbody>
+                </table>
+                <div class="cart-summary">
+                    <p>Delivery Price: $5.00</p>
+                    <p><strong>Total Cost: <span id="total-cost">$0.00</span></strong></p>
+                </div>
+            </div>
+
+            <!-- Place Order Section -->
+            <div class="place-order">
+                <h2>Place Order</h2>
+                <form id="order-form">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="text" id="address" placeholder="Shipping Address" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <div class="terms">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I accept the <a href="#">terms and policies</a></label>
+                    </div>
+                    <button type="submit"><a href="checkoutpro.html" >Place Order</a></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer" id="footer">
+        <div class="footer-box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="index.html" >Home</a>
+                <a href="About.html" >About</a>
+                <a href="products.html" >Books </a>
+                <a href="index.html" >Review</a>
+                <a href="contact.html" >Contact</a>
+                <a href="faqs.html" >FAQs</a>
+            </div>
+
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="registration.html" >My Account</a>
+                <a href="viewcart.html" >My Order</a>
+                
+            </div>
+
+
+            <div class="box">
+                <h3>Policy</h3>
+                <a href="terms.html" >Terms of service </a>
+                <a href="refund.html" >Refund policy</a>
+                <a href="shipping.html" >Shipping policy </a>
+                
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" >+92-234-3564787</a>
+                <a href="#" >bookcave@gmail.com</a>
+                <a href="#" >Islamabad, Pakistan.</a>
+                <div class="image-container">
+                    <img src="https://cdn.shoplightspeed.com/shops/612294/files/14471471/creditcardlogos.jpg" alt="Example Image">
+                </div>
+            </div>
+        </div>
+
+        <div class="credit"><p>&copy; 2025 <span>Book Cave.</span> All rights reserved.</p></div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

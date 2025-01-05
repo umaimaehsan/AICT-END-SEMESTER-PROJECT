@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - The Shadowed Bookstore</title>
+    <link rel="stylesheet" href="comic.css">
+</head>
+
+<body>
+    <header>
+        <h1>Book Cave</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Books</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="cart-link" class="hidden"><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+
+        <!-- Category Selection Bar -->
+        <div id="category-bar">
+            <ul>
+                <li><a href="romantic.html">Romantic Books</a></li>
+                <li><a href="crime.html">Crime Thrillers</a></li>
+                <li><a href="products.html">Horror Books</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="books" class="books">
+        <div class="heading">
+            <h2>Books Collection</h2>
+            <p>Explore our curated selection of thrilling reads. Sort by price or rating to find your perfect book!</p>
+        </div>
+
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for a book...">
+            <button id="search-button">Search</button>
+            <div id="results"></div>
+        </div>
+
+        <div id="filters">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+        <div id="book-list" class="flex-wrap">
+            <!-- Book Cards -->
+            <div class="book-card" data-price="10" data-rating="4.5" data-id="1" data-title="Diary of a Wimpy Kid">
+                <img src="comedy/images (1).jpg" alt="Diary of a Wimpy Kid" class="thumbnail">
+                <div class="book-details">
+                    <h3>Diary of a Wimpy Kid</h3>
+                    <p>by Jeff kinney</p>
+                    <p>Price: $10</p>
+                    <p>Rating: 4.5⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="15" data-rating="4.8" data-id="2" data-title="Diary of a Wimpy Kid">
+                <img src="comedy/images (2).jpg" alt="Diary of a Wimpy Kid" class="thumbnail">
+                <div class="book-details">
+                    <h3>Diary of a Wimpy Kid</h3>
+                    <p>by Jeff kinney</p>
+                    <p>Price: $15</p>
+                    <p>Rating: 4.8⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="8" data-rating="4.2" data-id="3" data-title="Diary of a Wimpy Kid">
+                <img src="comedy/images (3).jpg" alt="Diary of a Wimpy Kid" class="thumbnail">
+                <div class="book-details">
+                    <h3>Diary of a Wimpy Kid</h3>
+                    <p>by Jeff kinney</p>
+                    <p>Price: $8</p>
+                    <p>Rating: 4.2⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="12" data-rating="4.6" data-id="4" data-title="Diary of a Wimpy Kid">
+                <img src="comedy/images (4).jpg" alt="Diary of a Wimpy Kid" class="thumbnail">
+                <div class="book-details">
+                    <h3>Diary of a Wimpy Kid</h3>
+                    <p>by Jeff kinney</p>
+                    <p>Price: $12</p>
+                    <p>Rating: 4.6⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="7" data-rating="4.0" data-id="5" data-title="Diary of a Wimpy Kid">
+                <img src="comedy/images.jpg" alt="Diary of a Wimpy Kid" class="thumbnail">
+                <div class="book-details">
+                    <h3>Diary of a Wimpy Kid</h3>
+                    <p>by Jeff kinney</p>
+                    <p>Price: $7</p>
+                    <p>Rating: 4.0⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="20" data-rating="4.9" data-id="6" data-title="Diary of a Wimpy Kid">
+                <img src="comedy/img6.jpg" alt="Diary of a Wimpy Kid" class="thumbnail">
+                <div class="book-details">
+                    <h3>Diary of a Wimpy Kid</h3>
+                    <p>by Jeff kinney</p>
+                    <p>Price: $20</p>
+                    <p>Rating: 4.9⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="search.js"></script>
+    
+
+
+    <footer>
+        <p>&copy; 2025 Book Cave. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

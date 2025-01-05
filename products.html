@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - The Shadowed Bookstore</title>
+    <link rel="stylesheet" href="product_style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Book Cave</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Books</a></li>
+                <li><a href="About.html">About</a></li>
+             
+                <li><a href="index.html">Review</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="cart-link" class="hidden"><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+
+        <!-- Category Selection Bar -->
+        <div id="category-bar">
+            <ul>
+                <li><a href="romantic.html">Romantic Books</a></li>
+                <li><a href="crime.html">Crime Thrillers</a></li>
+                <li><a href="comic.html">Comic Books</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="books" class="books">
+        <div class="heading">
+            <h2>Books Collection</h2>
+            <p>Explore our curated selection of thrilling reads. Sort by price or rating to find your perfect book!</p>
+        </div>
+
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search for a book...">
+            <button id="search-button">Search</button>
+            <div id="results"></div>
+        </div>
+
+        <div id="filters">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="price">Price</option>
+                <option value="rating">Rating</option>
+            </select>
+        </div>
+        <div id="book-list" class="flex-wrap">
+            <!-- Book Cards -->
+            <div class="book-card" data-price="10" data-rating="4.5" data-id="1" data-title="Horrors of the Night">
+                <img src="img/image/horror/img1.jpg" alt="Horrors of the Night" class="thumbnail">
+                <div class="book-details">
+                    <h3>Horrors of the Night</h3>
+                    <p>by Tom Coleman</p>
+                    <p>Price: $10</p>
+                    <p>Rating: 4.5⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="15" data-rating="4.8" data-id="2" data-title="The siren and the Specter">
+                <img src="img/image/horror/img2.jpg" alt="The siren and the Specter" class="thumbnail">
+                <div class="book-details">
+                    <h3>The siren and the Specter</h3>
+                    <p>by Jonathan Janz</p>
+                    <p>Price: $15</p>
+                    <p>Rating: 4.8⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="8" data-rating="4.2" data-id="3" data-title="The Canterville Ghost">
+                <img src="img/image/horror/img3.jpg" alt="The Canterville Ghost" class="thumbnail">
+                <div class="book-details">
+                    <h3>The Canterville Ghost</h3>
+                    <p>by Oscar Wilde</p>
+                    <p>Price: $8</p>
+                    <p>Rating: 4.2⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="12" data-rating="4.6" data-id="4" data-title="The Exorcist">
+                <img src="img/image/horror/img4.jpg" alt="The Exorcist" class="thumbnail">
+                <div class="book-details">
+                    <h3>The Exorcist</h3>
+                    <p>by William Peter Blatty</p>
+                    <p>Price: $12</p>
+                    <p>Rating: 4.6⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="7" data-rating="4.0" data-id="5" data-title="The Book of Accidents">
+                <img src="img/image/horror/img5.jpg" alt="The Book of Accidents" class="thumbnail">
+                <div class="book-details">
+                    <h3>The Book of Accidents</h3>
+                    <p>by Chuck Wendig</p>
+                    <p>Price: $7</p>
+                    <p>Rating: 4.0⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+            <div class="book-card" data-price="20" data-rating="4.9" data-id="6" data-title="Ghost Eaters">
+                <img src="img/image/horror/img6.jpg" alt="Ghost Eaters" class="thumbnail">
+                <div class="book-details">
+                    <h3>Ghost Eaters</h3>
+                    <p>by Clay McLeod Chapman</p>
+                    <p>Price: $20</p>
+                    <p>Rating: 4.9⭐</p>
+                    <button class="add-to-cart"><a href="cart.html">Add to cart</a> </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="search.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Book Cave. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
